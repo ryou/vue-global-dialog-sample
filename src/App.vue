@@ -34,7 +34,7 @@ export default {
     dialog () {
       this.$dialog({
         title: '関数呼び出しによるDialog',
-        message: 'this.$alertから呼び出されました'
+        message: 'this.$dialogから呼び出されました'
       }).then(() => {
         alert('ダイアログが閉じられました')
       })
