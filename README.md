@@ -1,29 +1,20 @@
-# 67
+# [Vue.js]関数によるダイアログ起動
 
-## Project setup
-```
-yarn install
-```
+## 概要
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
++ エラーダイアログやトースト等を実装する際に、ロートコンポーネントに各パターン並べるのは嫌
++ `window.alert`みたいな感じで関数叩いたら起動するようにしたい
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## 実装方法
 
-### Run your tests
-```
-yarn run test
-```
+`Vue.prototype.$dialog`という形で叩いたら`Dialog`コンポーネントをbody直下に生成する関数をプラグインとして作成。
 
-### Lints and fixes files
-```
-yarn run lint
-```
+また、「ダイアログが閉じられたら特定の処理を実行したい」という要求は頻繁にあるので、ダイアログが閉じられたらresolveするPromiseを返却する。
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 動作サンプル
+
+
+
+## 実ソース
+
+`src`ディレクトリ内の各ソースを見ればわかる。
