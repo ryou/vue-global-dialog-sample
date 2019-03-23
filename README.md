@@ -13,7 +13,7 @@
 
 ## 動作サンプル
 
-
+[GitHub Pages](https://ryou.github.io/vue-global-dialog-sample/dist/)
 
 ## 実ソース
 
